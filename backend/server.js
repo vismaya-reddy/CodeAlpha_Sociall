@@ -32,4 +32,7 @@ app.use((req, res) => res.status(404).json({ success: false, message: 'Route not
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Sociall API running on http://localhost:${PORT}`));
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 Sociall API running on port ${PORT}`);
+});
