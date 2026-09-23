@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up · Sociall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-visual">
+    <div class="auth-visual-blob"></div>
+    <div class="auth-visual-content">
+      <h1>✨ Sociall</h1>
+      <p>Join a community where every post, like and follow tells your story.</p>
+    </div>
+  </div>
+  <div class="auth-form-side">
+    <div class="auth-box">
+      <h2>Create your account</h2>
+      <p class="auth-subtitle">It only takes a minute.</p>
+      <form id="signupForm" class="auth-form">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" required maxlength="100">
+        </div>
+        <div class="form-group">
+          <label for="signupUsername">Username</label>
+          <input type="text" id="signupUsername" required maxlength="20" pattern="[a-zA-Z0-9_]{3,20}" title="3-20 characters: letters, numbers, underscores">
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" required minlength="6" autocomplete="new-password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Sign Up</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</div>
+<script src="js/config.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log In · Sociall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-visual">
+    <div class="auth-visual-blob"></div>
+    <div class="auth-visual-content">
+      <h1>✨ Sociall</h1>
+      <p>Connect, share, and discover moments from people you care about.</p>
+    </div>
+  </div>
+  <div class="auth-form-side">
+    <div class="auth-box">
+      <h2>Welcome back</h2>
+      <p class="auth-subtitle">Log in to continue to your feed.</p>
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="loginIdentifier">Email or Username</label>
+          <input type="text" id="loginIdentifier" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Log In</button>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+</div>
+<script src="js/config.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
